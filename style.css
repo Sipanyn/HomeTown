@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Happy Monkey";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #222;
+  line-height: 1.6;
+}
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/city-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+}
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  padding: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Hero Content
+========================= */
+
+.hero-content {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  padding: 180px 24px;
+
+  text-align: center;
+}
+
+.small-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin: 15px 0;
+}
+
+.hero-content > p:not(.small-title) {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+
+  padding: 12px 24px;
+
+  background: white;
+  color: #222;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #eee;
+}
+
+/* =========================
+   Sections
+========================= */
+
+.section {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 100px 24px;
+}
+
+.section-content {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+.section-label {
+  font-size: 14px;
+
+  letter-spacing: 2px;
+
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+.section h2 {
+  font-size: 42px;
+
+  line-height: 1.2;
+
+  margin-bottom: 20px;
+}
+
+.section-content p {
+  margin-bottom: 16px;
+}
+
+.section-content img {
+  width: 100%;
+
+  height: 400px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+/* =========================
+   Places
+========================= */
+
+.places-section {
+  max-width: 1200px;
+}
+
+.section-heading {
+  text-align: center;
+
+  max-width: 600px;
+
+  margin: 0 auto 50px;
+}
+
+.cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.card {
+  border: 1px solid #ddd;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background: white;
+}
+
+.card img {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 22px;
+
+  margin-bottom: 8px;
+}
+
+/* =========================
+   Quote
+========================= */
+
+.quote-section {
+  padding: 100px 24px;
+
+  background: #f3f3f3;
+
+  text-align: center;
+}
+
+blockquote {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  font-size: 32px;
+
+  font-style: italic;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+  padding: 70px 24px;
+
+  background: #222;
+
+  color: white;
+
+  text-align: center;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+}
+
+.copyright {
+  margin-top: 30px;
+
+  font-size: 14px;
+
+  opacity: 0.7;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .section-content {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section h2 {
+    font-size: 34px;
+  }
+}
